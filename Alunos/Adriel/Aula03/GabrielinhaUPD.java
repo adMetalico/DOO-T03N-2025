@@ -14,7 +14,7 @@ class Venda {
     }
 }
 
-public class CalculadoraPlantas {
+public class GabrielinhaUPD {
     private static List<Venda> registroVendas = new ArrayList<>();
 
     public static void main(String[] args) {
