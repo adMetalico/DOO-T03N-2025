@@ -78,7 +78,7 @@ public class SistemaBiblioteca {
             return;
         }
 
-        LocalDate data = LocalDate.now().minusDays(random.nextInt(5)); // data aleatória recente
+        LocalDate data = LocalDate.now().minusDays(random.nextInt(5));
         boolean sucesso = biblioteca.realizarEmprestimo(cliente, livro, data);
         System.out.println(sucesso ? "Empréstimo realizado." : "Não foi possível realizar o empréstimo.");
     }
@@ -91,7 +91,7 @@ public class SistemaBiblioteca {
             System.out.println("Livro não encontrado.");
             return;
         }
-        LocalDate data = LocalDate.now().plusDays(random.nextInt(10)); // data aleatória futura
+        LocalDate data = LocalDate.now().plusDays(random.nextInt(10));
         double multa = biblioteca.realizarDevolucao(livro, data);
         System.out.printf("Devolução realizada. Multa: R$ %.2f%n", multa);
     }
